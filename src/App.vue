@@ -1,26 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <FormApp />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FormApp from './components/FormApp.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FormApp
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+	* {
+		box-sizing: border-box;
+		font-family: Lato, sans-serif;
+		padding: 0;
+		margin: 0;
+		color: white;
+	}
+
+	body {
+		padding: 10px 0px;
+		background-color: rgb(26, 26, 26);
+	}
+
+	::-webkit-scrollbar{
+		width: 8px;
+		background-color: #6d6d6d;
+	}
+	::-webkit-scrollbar-track{
+		background-color: #000000;
+	}
+	::-webkit-scrollbar-thumb{
+		background-color: rgb(15, 170, 111);
+	}
 </style>
